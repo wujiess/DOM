@@ -7,7 +7,7 @@ window.dom = {
     },
     each(nodes, fn) {
         for (let i = 0; i < nodes.length; i++) {
-            fn(nodes[i]);
+            fn.call(null, nodes[i]);
         }
     }
 }
